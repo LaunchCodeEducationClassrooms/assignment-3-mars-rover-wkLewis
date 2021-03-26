@@ -15,7 +15,9 @@ describe("GRADING TEST: ", function() {
      {
        expect(studentSpecs[i].status).toEqual("passed");
        expect(studentSpecs[i].passedExpectations.length).toBeGreaterThanOrEqual(1);
+    
      }
+    
    });
 
    it("Responds to TA message & commands", function() {
@@ -38,5 +40,5 @@ describe("GRADING TEST: ", function() {
     expect(response.results[4].roverStatus.mode).toEqual('LOW_POWER');
     expect(response.results[4].roverStatus.generatorWatts).toEqual(110);
    });
-
+  console.log(passedExpectations.length);
 });
